@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Black Rose Performance — advanced programming, nutrition coaching, and individualized performance support.">
+<title>Black Rose Performance | Train With Intention</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#top"><span>BLACK ROSE</span><small>PERFORMANCE</small></a>
+  <button class="menu-button" aria-label="Toggle navigation">☰</button>
+  <nav class="nav">
+    <a href="#philosophy">Philosophy</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#onboarding">Apply</a>
+    <a class="button button-small" href="#pricing">Explore Coaching ↗</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">Advanced coaching · Intentional performance</p>
+    <h1>Discipline,<br><em>refined.</em></h1>
+    <p class="hero-copy">Personalized programming and nutrition coaching for those who are ready to train with purpose, pursue higher standards, and build lasting performance.</p>
+    <div class="actions"><a class="button" href="#services">Explore services ↗</a><a class="underlined" href="#philosophy">The Black Rose approach</a></div>
+  </div>
+  <div class="hero-panel"><div class="panel-symbol">✳</div><div class="panel-caption">Strength / Structure / Self-trust</div></div>
+</section>
+
+<div class="ribbon"><span>Strength athletes</span><b>✳</b><span>Powerlifters</span><b>✳</b><span>Bodybuilders</span><b>✳</b><span>Intentional progress</span></div>
+
+<section id="philosophy" class="section philosophy">
+  <div class="kicker">01 / Philosophy</div>
+  <div class="two-column">
+    <h2>Build the body.<br><em>Raise the standard.</em></h2>
+    <div class="copy"><p class="lead">Black Rose Performance is for people who want more than a template. Coaching is built around your goals, your training demands, and the details that make sustainable progress possible.</p><p>We combine structured programming, practical nutrition, ongoing feedback, and accountability to help you perform at a higher level without losing sight of the person behind the plan.</p></div>
+  </div>
+  <div class="principles">
+    <article><span>01</span><h3>Individual strategy</h3><p>Your plan is built around your goals, experience, schedule, recovery, and performance demands.</p></article>
+    <article><span>02</span><h3>Consistent refinement</h3><p>Weekly review and ongoing adjustments keep your training and nutrition responsive to real progress.</p></article>
+    <article><span>03</span><h3>High standards</h3><p>Clear expectations, direct feedback, and practical accountability create meaningful momentum.</p></article>
+  </div>
+</section>
+
+<section id="services" class="section services">
+  <div class="kicker">02 / Services</div>
+  <div class="two-column"><h2>Coaching built<br><em>for the work.</em></h2><p class="lead">Choose one area of support or combine programming and nutrition through the Advanced Package.</p></div>
+  <div class="service-grid">
+    <article><div class="service-number">01</div><h3>Programming — Advanced</h3><p>For strength athletes, powerlifters, bodybuilders, and anyone wanting higher-level coaching.</p><ul><li>Customized training plan tailored to your goals</li><li>Weekly adjustments as needed to optimize results</li><li>Weekly check-ins for accountability and progress tracking</li><li>Daily feedback and guidance as needed</li><li>Signal App access for adjustments and technique feedback</li></ul></article>
+    <article><div class="service-number">02</div><h3>Nutrition Coaching — Advanced</h3><p>For clients seeking a comprehensive approach to nutrition and supplementation.</p><ul><li>Customized nutrition plan updated weekly</li><li>Macronutrient targets and detailed daily meal plans</li><li>Greater emphasis on micronutrients and supplementation</li><li>Daily support and adjustments as needed</li><li>Weekly check-ins for accountability and fine-tuning</li></ul></article>
+    <article class="dark-card"><div class="service-number">03</div><h3>Advanced Package</h3><p>Integrated support for clients who want programming and nutrition working together.</p><ul><li>Programming — Advanced</li><li>Nutrition Coaching — Advanced</li><li>Weekly check-ins</li><li>Daily feedback and guidance as needed</li><li>Ongoing performance-focused support</li></ul></article>
+  </div>
+  <p class="fine-print">Powerlifting meet-day handling is priced case by case based on travel distance and time. Pricing remains consistent throughout meet preparation.</p>
+</section>
+
+<section id="pricing" class="section pricing">
+  <div class="kicker">03 / Pricing</div>
+  <div class="pricing-head"><h2>Commit to<br><em>your progression.</em></h2><p class="lead">Monthly coaching is available alongside prepaid commitments. Longer commitments receive preferred pricing.</p></div>
+  <div class="pricing-controls"><label for="term">Commitment length</label><select id="term"><option value="1">Month-to-month</option><option value="3">3 months prepaid · 5% off</option><option value="6">6 months prepaid · 10% off</option><option value="12">12 months prepaid · 15% off</option></select></div>
+  <div id="pricing-grid" class="pricing-grid"></div>
+  <p class="fine-print">Prices are configurable in <code>assets/site-config.js</code>. PayPal links are intentionally blank until implementation.</p>
+</section>
+
+<section id="onboarding" class="section onboarding">
+  <div class="kicker">04 / Client onboarding</div>
+  <div class="two-column"><h2>Begin with<br><em>intention.</em></h2><p class="lead">Complete the inquiry form so the coaching experience can be aligned with your goals, training history, and current needs.</p></div>
+  <form id="onboarding-form" class="form">
+    <div class="form-grid">
+      <label>Full name<input required name="name" type="text" placeholder="Your name"></label>
+      <label>Email address<input required name="email" type="email" placeholder="you@example.com"></label>
+      <label>Instagram handle<input name="instagram" type="text" placeholder="@yourhandle"></label>
+      <label>Preferred service<select required name="service"><option value="">Select a service</option><option>Programming — Advanced</option><option>Nutrition Coaching — Advanced</option><option>Advanced Package</option></select></label>
+      <label>Commitment length<select required name="commitment"><option value="">Select a commitment</option><option>Month-to-month</option><option>3 months prepaid</option><option>6 months prepaid</option><option>12 months prepaid</option></select></label>
+      <label>Primary goal<input required name="goal" type="text" placeholder="What are you working toward?"></label>
+    </div>
+    <label>Training background and relevant context<textarea required name="background" rows="5" placeholder="Tell me about your experience, current training, schedule, and anything important to your coaching plan."></textarea></label>
+    <label>Anything else I should know?<textarea name="notes" rows="4" placeholder="Competition timeline, nutrition considerations, preferences, or questions."></textarea></label>
+    <button class="button" type="submit">Submit inquiry ↗</button>
+    <p class="form-note">Form submission is a placeholder until a form provider or backend is connected.</p>
+  </form>
+</section>
+
+<section class="closing"><p class="eyebrow">The standard is built daily.</p><h2>Become more<br><em>capable.</em></h2><a class="button button-light" href="#onboarding">Start your inquiry ↗</a></section>
+</main>
+
+<footer><a class="brand" href="#top"><span>BLACK ROSE</span><small>PERFORMANCE</small></a><p>© <span id="year"></span> Black Rose Performance</p><div><a href="mailto:hello@blackroseperformance.com">Contact</a><a href="#">Instagram</a></div></footer>
+<script src="assets/site-config.js"></script><script src="script.js"></script>
+</body>
+</html>
